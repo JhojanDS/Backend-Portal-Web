@@ -56,7 +56,7 @@ public class UsuarioRestController {
         
             Map<String,Object> response = new HashMap<>();
             response.put("mensaje", "El email ya se encuentra registrado con otro usuario.");             
-            return new ResponseEntity<>(response,HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(response,HttpStatus.UNAUTHORIZED);
         }
 
       
